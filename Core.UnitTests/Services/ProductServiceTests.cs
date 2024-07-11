@@ -3,6 +3,7 @@ using Application.DTOs;
 using Application.Interfaces;
 using Application.Services;
 using AutoFixture;
+using AutoFixture.AutoMoq;
 using AutoMapper;
 using Core.Entities;
 using Core.Interfaces;
