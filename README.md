@@ -1,8 +1,9 @@
 # Product CRUD API
 
 you can do this project by Leveraging Custom PostgreSQL Functions in EFCore by following steps:
+
 ##1. Create the PostgreSQL Function
-    CREATE OR REPLACE FUNCTION get_all_products() RETURNS SETOF products AS $$
+    ```CREATE OR REPLACE FUNCTION get_all_products() RETURNS SETOF products AS $$
     BEGIN
         RETURN QUERY SELECT * FROM products;
     END;
@@ -13,10 +14,11 @@ you can do this project by Leveraging Custom PostgreSQL Functions in EFCore by f
         INSERT INTO products (name, price) VALUES (p_name, p_price);
     END;
     $$ LANGUAGE plpgsql;
+    ```
 
 ##2. Map the Function to EF Core DbContext
-  using Microsoft.EntityFrameworkCore;
 
+```
 public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
@@ -35,9 +37,12 @@ public class AppDbContext : DbContext
 
     // Other DbSet and DbFunction definitions
 }
+```
 ##3. Register the Function in Migration
+```
 dotnet ef migrations add AddGetAllProductsFunction
 dotnet ef database update
+```
 
 ##4. Use the Function in Your API
 public class ProductsController : ControllerBase
