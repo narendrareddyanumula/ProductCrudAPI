@@ -4,14 +4,82 @@
     "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj": {}
   },
   "projects": {
-    "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj": {
+    "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj",
-        "projectName": "WebApi",
-        "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj",
+        "projectUniqueName": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/Application.csproj",
+        "projectName": "Application",
+        "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/Application.csproj",
         "packagesPath": "/Users/varalakshmi/.nuget/packages/",
-        "outputPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/obj/",
+        "outputPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/varalakshmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj": {
+                "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj",
+        "projectName": "Core",
+        "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj",
+        "packagesPath": "/Users/varalakshmi/.nuget/packages/",
+        "outputPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/varalakshmi/.nuget/NuGet/NuGet.Config"
@@ -42,7 +110,148 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Infrastructure/Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Infrastructure/Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Infrastructure/Infrastructure.csproj",
+        "packagesPath": "/Users/varalakshmi/.nuget/packages/",
+        "outputPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/varalakshmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj": {
+                "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj",
+        "projectName": "WebApi",
+        "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/WebApi.csproj",
+        "packagesPath": "/Users/varalakshmi/.nuget/packages/",
+        "outputPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/WebApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/varalakshmi/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/Application.csproj": {
+                "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/Application.csproj"
+              },
+              "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Infrastructure/Infrastructure.csproj": {
+                "projectPath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Infrastructure/Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[12.0.1, )"
