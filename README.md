@@ -3,7 +3,9 @@
 you can do this project by Leveraging Custom PostgreSQL Functions in EFCore by following steps:
 
 ##1. Create the PostgreSQL Function
-    ```CREATE OR REPLACE FUNCTION get_all_products() RETURNS SETOF products AS $$
+
+    ```
+    CREATE OR REPLACE FUNCTION get_all_products() RETURNS SETOF products AS $$
     BEGIN
         RETURN QUERY SELECT * FROM products;
     END;
