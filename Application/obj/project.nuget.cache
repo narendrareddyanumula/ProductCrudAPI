@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "wV/b3G9pvS4=",
+  "success": true,
+  "projectFilePath": "/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Application/Application.csproj",
+  "expectedPackageFiles": [
+    "/Users/varalakshmi/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
+    "/Users/varalakshmi/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/6.0.0/microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "/Users/varalakshmi/.nuget/packages/microsoft.extensions.options/6.0.0/microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "/Users/varalakshmi/.nuget/packages/microsoft.extensions.primitives/6.0.0/microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "/Users/varalakshmi/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
