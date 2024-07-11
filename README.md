@@ -1,7 +1,7 @@
 # Product CRUD API
 
 you can do this project by Leveraging Custom PostgreSQL Functions in EFCore by following steps:
-#1. Create the PostgreSQL Function
+##1. Create the PostgreSQL Function
     CREATE OR REPLACE FUNCTION get_all_products() RETURNS SETOF products AS $$
     BEGIN
         RETURN QUERY SELECT * FROM products;
@@ -14,7 +14,7 @@ you can do this project by Leveraging Custom PostgreSQL Functions in EFCore by f
     END;
     $$ LANGUAGE plpgsql;
 
-#2. Map the Function to EF Core DbContext
+##2. Map the Function to EF Core DbContext
   using Microsoft.EntityFrameworkCore;
 
 public class AppDbContext : DbContext
@@ -35,11 +35,11 @@ public class AppDbContext : DbContext
 
     // Other DbSet and DbFunction definitions
 }
-3. Register the Function in Migration
+##3. Register the Function in Migration
 dotnet ef migrations add AddGetAllProductsFunction
 dotnet ef database update
 
-4. Use the Function in Your API
+##4. Use the Function in Your API
 public class ProductsController : ControllerBase
 {
     private readonly AppDbContext _context;
@@ -58,7 +58,7 @@ public class ProductsController : ControllerBase
 
     // Other API endpoints
 }
-Notes
+##Notes
 Security and Validation: Ensure that your PostgreSQL functions and mappings are secure and validate inputs to prevent SQL injection.
 Testing: Test your API endpoints and function mappings thoroughly to ensure they behave as expected.
 Documentation: Update your README or project documentation to include details about custom PostgreSQL functions used in your API.
