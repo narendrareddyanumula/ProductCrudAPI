@@ -1,0 +1,12 @@
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/bin/Debug/net8.0/Core.deps.json
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/bin/Debug/net8.0/Core.dll
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/bin/Debug/net8.0/Core.pdb
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.AssemblyInfoInputs.cache
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.AssemblyInfo.cs
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.csproj.CoreCompileInputs.cache
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.sourcelink.json
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.dll
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/refint/Core.dll
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/Core.pdb
+/Users/varalakshmi/Documents/gavs/ProductCrudAPI/Core/obj/Debug/net8.0/ref/Core.dll
